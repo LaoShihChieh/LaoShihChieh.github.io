@@ -10705,7 +10705,7 @@ h2 {
     align-items: center;
     background: radial-gradient(circle, rgba(10, 97, 126, 0.20521712102809875) 0%, rgba(15, 53, 92, 1) 100%), url("1.png");
     background-position: 90% 50%;
-    background-size: cover, auto;
+    background-size: cover;
     height: 100%;
     text-align: center;
 }
@@ -32239,3 +32239,8 @@ html.w-mod-js [data-ix="hide-compare-section"] {
 .about .text {
     margin-top: 4rem;
 }
+
+.nav-panel-contents{
+    display: none;
+}
+
