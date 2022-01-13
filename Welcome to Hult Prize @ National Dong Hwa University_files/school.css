@@ -1,0 +1,3206 @@
+/**
+ * Version 2.0
+ * Authored by Najeeb Khan
+ */
+
+@import url('school.css');
+:root {
+    /* Primary Colors */
+    --hp-magenta: #E6007F;
+    --hp-dark: #100C08;
+    --hp-gray: #706F6F;
+    /* Second Colors */
+    --hp-gray-clear: #9D9D9C;
+    --hp-white-clear: #FFFFFF;
+    --hp-magenta-clear: #c00a74;
+    --hp-vine: #841452;
+    --hp-vine-clear: #aa1267;
+    --hp-vine-dark: #631343;
+  }
+  
+  /* General Principal Fonts  */
+  
+  .hp-general-font {
+    font-family: var(--hp-light) !important;
+  }
+  
+  .hp-medium-font {
+    font-family: var(--hp-light-italic) !important;
+  }
+  
+  .hp-bold-font {
+    font-family: Telegraf-UltraBold !important;
+  }
+  
+  
+  
+  /* General Principal Colors Letters */
+  
+  .hp-white-color {
+    color: var(--hp-white-clear);
+  }
+  
+  .hp-magenta-color {
+    color: var(--hp-magenta);
+  }
+  
+  .hp-dark-color {
+    color: var(--hp-dark);
+  }
+  
+  .hp-gray-color2 {
+    color: var(--hp-gray);
+  }
+  
+  .hp-gray-color {
+    color: var(--hp-gray);
+    margin-top: 5px;
+  }
+  
+  /* Size letter */
+  .hp-size-25px{
+    font-size: 25px !important;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*--Font loading and assignment--*/
+
+@font-face {
+    font-family: graphik-regular;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: graphik-regular-italic;
+    src: url(../fonts/poppins/Poppins-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: graphik-medium;
+    src: url(../fonts/poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: graphik-light;
+    src: url(../fonts/poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: graphik-bold;
+    src: url(../fonts/poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: graphik-super;
+    src: url(../fonts/poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: graphik-black;
+    src: url(../fonts/poppins/Poppins-Black.ttf);
+}
+
+@font-face {
+    font-family: graphik-black-italic;
+    src: url(../fonts/poppins/Poppins-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: proximanova;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: proximanova-light;
+    src: url(../fonts/poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: proximanova-bold;
+    src: url(../fonts/poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: proximanova-semibold;
+    src: url(../fonts/poppins/proximanovasemibold.otf);
+}
+  
+  @font-face {
+      font-family: helveticaneue;
+      src: url(../fonts/helveticaneue/helveticaneue.otf);
+  }
+  
+  @font-face {
+      font-family: helveticaneue-light;
+      src: url(../fonts/helveticaneue/helveticaneuebold.otf);
+  }
+  
+  @font-face {
+      font-family: helveticaneue-bold;
+      src: url(../fonts/helveticaneue/helveticaneuebold.otf);
+  }
+
+@font-face {
+    font-family: Telegraf-Regular;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Telegraf-UltraBold;
+    src: url(../fonts/poppins/Poppins-ExtraBold.ttf);
+}
+
+    @font-face {
+        font-family: Social-Icons;
+        src: url(../av-assets/fonts/social-icons.woff)
+    }
+  
+  /*--html and body tag attributes--*/
+  
+  html {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%
+  }
+  
+  body {
+      font-family: Telegraf-Regular;
+      overflow-x: hidden;
+      width: 100%;
+  }
+  
+  
+  .hult-logo {
+      margin-top:3%;
+  }
+
+  .mt-5 {
+      margin-top: 5em;
+  }
+
+  /*--page break--*/
+  
+  .page-break {
+      -moz-border-bottom-colors: none;
+      -moz-border-image: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      border-width: 1px 0;
+      border-color: #cdd0d5;
+      border-style: solid none;
+      margin: 50px 0;
+  }
+/*--incentives--*/
+#incentives {
+    padding: 150px 0;
+    position: relative;
+}
+
+#hosting {
+    position: relative;
+}
+
+#incentivesFigs1 {
+    width: 300px;
+    top: 0;
+    position: absolute;
+    right: 10%;
+}
+
+#incentivesFigs2 {
+    width: 100px;
+    top: 30%;
+    position: absolute;
+    left: 0;
+}
+
+#incentivesFigs3 {
+    width: 13%;
+    top: 100px;
+    position: absolute;
+    right: -10%;
+}
+
+#incentivesFigs4 {
+    width: 160px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+.incentive-item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .incentive-item img {
+        width: 50%;
+        background-color: white;
+    }
+
+    .incentive-item ul {
+        text-align: center;
+        padding-top: 100px;
+        border: 2px solid #969696;
+        border-radius: 40px;
+        padding-bottom: 40px;
+        font-family: 'Telegraf-Regular';
+        font-size: 1.6rem;
+        margin-top: -80px;
+        height: 287px;
+        padding-left: 30px;
+        padding-right: 15px;
+        color: black;
+        font-weight: 700;
+    }
+
+        .incentive-item ul li {
+            margin-bottom: 20px;
+        }
+
+#incentive2, #incentive3 {
+    margin-top: 36px;
+}
+
+#hosting .pink-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: 30px;
+}
+
+
+.hosting-item img {
+    border: 2px solid #ED0080;
+    border-radius: 15%;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.hosting-item p {
+    font-family: Telegraf-UltraBold;
+    color: black;
+    font-size: 1.6rem;
+}
+  
+  /*--section--*/
+  
+  .section {
+      max-width: 1120px;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  
+  /*--banner--*/
+  
+  .no-margin {
+      margin: 0;
+  }
+  
+    
+  #overlay {
+    background-size: cover;
+    opacity: 0.4;     
+    height: 100%;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  #bannerContent {
+      position: relative;
+      height: 100%;
+  }
+  
+  #text-top {
+      position: absolute; 
+      top: 45%;
+      width:100%;
+  }
+  
+  #message-mob {
+      display:none;
+  }
+  
+  #images-top {
+      position: absolute;
+      top: 20%;
+  }
+
+.banner {
+    height: 90vh;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+    background-image:url('../images/school/schoolbanner.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+#mainBanner {
+    margin-top: 70px;
+}
+
+#winnerBanner {
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+#logosWinnerBanner {
+    background: linear-gradient( 0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,.8) 100%);
+}
+
+#winnerOrgName {
+    color: white;
+    font-family: 'Telegraf-UltraBold';
+    font-size: 3rem;
+    padding-bottom: 70px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.1;
+}
+
+
+#winnerCaption {
+    position: relative;
+}
+
+#winnerCaption svg {
+    position: absolute;
+    width: 35px;
+    right: -35px;
+    top: -35px;
+}
+
+  .hashtag-box {
+    font-size: 42px;
+    font-family: Telegraf-UltraBold;
+    color: black;
+    font-weight: 500;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #E3007F;
+    line-height: 1.2;
+    padding-right: 10px;
+    max-width: 1000px;
+  }
+
+    .hashtag-box span {
+        background-color: #E3007F;
+        color: white;
+        padding: 5px;
+    }
+
+
+  .welcome {
+      font-size: 8rem;
+      font-family: Telegraf-UltraBold;
+      color:#E3007F;
+      font-weight:500;
+  }
+
+  #logoBanner{
+      width: 400px;
+      height: 300px;
+  }
+
+  #bannerWinnerLogo1, #bannerWinnerLogo2{
+      width: 230px;
+      height: 200px;
+  }
+
+#bannerWinnerLogo2 {
+    height: 230px;
+}
+    #greeting {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Need a specific value to work */
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,.8) 100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#greeting .school-social-links{
+    width: fit-content;
+    margin: 20px auto;
+    list-style: none;
+}
+
+    #greeting .school-social-links li{
+        display: inline-block;
+    }
+
+    #greeting .school-social-links > li > a {
+        color: #FFFFFF;
+        background-color: #E6007F;
+        border-radius: 32px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        padding: 12px 16px;        
+    }
+
+
+  
+  /*--navigation bar--*/
+  
+  .navbar {
+      background-color: #ea008a;
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      border: none;
+      margin-bottom: 0px;
+  }
+  
+  .navbar-brand {
+      padding: 10px;
+      margin-top: 8px;
+  }
+  
+  .navbar-brand img {
+      max-height: 25px;
+  }
+  
+  #nav.affix {
+      position: fixed;
+      top: 0;
+      width:100vw;
+      z-index:1000;
+  }
+  
+  /*change navbar color to pink*/
+  .navbar-default {
+      background-color: #FFFFFF;
+      background-color: rgba(255,255,255,.9);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+  .navbar-default .navbar-brand {
+      color: #ecf0f1;
+  }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #ecdbff;
+  }
+  .navbar-default .navbar-text {
+      color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav > li > a {
+      color: black;
+      text-transform: uppercase;
+      font-family: Telegraf-UltraBold;
+  }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #ea008a;
+  }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+      color: #ecdbff;
+      background-color: #fc1ba0;
+  }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+      color: #ecdbff;
+      background-color: #fc1ba0;
+  }
+  .navbar-default .navbar-toggle {
+      color:black;
+      border-color: black;
+  }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: transparent;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+      background-color: #ea008a;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+      border-color: #ecf0f1;
+  }
+  .navbar-default .navbar-link {
+      color: #ecf0f1;
+  }
+  .navbar-default .navbar-link:hover {
+      color: #ecdbff;
+  }
+
+ul.nav.navbar-nav {
+    float: right;
+    margin: 10px 0px;
+}
+
+  ul.nav.navbar-nav{
+  }
+  
+  /*media query to change when the navbar (at width 1200px) to smaller size*/
+  @media (max-width: 1200px) {
+      .navbar-nav > li > a {
+          padding-left:5px;
+          padding-right:5px;
+      }
+      .navbar > .container {
+          width:100%;
+          max-width:100%;
+      }
+    .navbar-brand{
+        margin-top: 0px;
+    }
+
+    #banner {
+        margin-top: 50px;
+    }
+  }
+  
+  /*media query to change when the navbar collapses (at width 900px) and changes the color to pink*/
+  @media (max-width: 900px) {
+      .navbar-default {
+          text-align: center;
+      }
+      .navbar-header {
+          float: none;
+      }
+      .navbar-left,.navbar-right {
+          float: none !important;
+      }
+      .navbar-toggle {
+          display: block;
+      }
+      .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-fixed-top {
+          top: 0;
+          border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+          display: none!important;
+      }
+      .navbar-nav {
+          float: none!important;
+          margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+          float: none;
+      }
+      .navbar-nav>li>a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+      .collapse.in{
+          display:block !important;
+      }
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+          color: #ecf0f1;
+      }
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #ecdbff;
+      }
+      .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+          color: #ecdbff;
+          background-color: #fc1ba0;
+      }
+  }
+  
+  /*change navbar text size to 21*/
+  .navbar .nav > li {                       
+      font-size: 13px;
+      text-align: center;
+  }
+  
+  
+  /*--announcement section--*/
+  
+  #announcement {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  
+  #announcement .section {
+      background: rgb(233, 188, 218);
+  }
+  
+  #announcement #announcement-content {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  
+  #announcement h2 {
+      font-size: 22px;
+      font-family: proximanova-semibold;
+  }
+  
+  #announcement h3 {
+      font-size: 16px;
+      line-height: 16px;
+      font-family: proximanova;
+  }
+  
+  #announcement i {
+      top: 0;
+      right: 0;
+      float: right;
+      padding-right: 20px;
+      padding-top: 20px;
+  }
+  
+  /*--message section--*/
+
+#message {
+    font-family: Telegraf-Regular;
+    font-size: 14px;
+    position: relative;
+    min-height: 550px;
+}
+  #content-desktop{
+      display: block;
+  }
+  #content-mobile{
+      display:none;
+  }
+#content-mobile-two {
+    display: none;
+}
+  #director-image-box {
+    float: left;
+  }
+@media screen and (max-width: 600px) {
+   
+    #content-desktop {
+        display: none;
+    }
+
+    #content-mobile {
+        display: block;
+        background-image: url(../images/school/backmobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: inherit !important ;
+    }
+    #content-mobile-two {
+        display: block;
+    }
+    #director-image-box {
+        float: inherit;
+    }
+
+}
+   
+
+    .director-image {
+       height: 300px;
+       width: 300px;
+       object-fit: cover;
+       padding: 0px;
+       border: solid 6px #F70080;
+       float: right;
+    }
+    
+    #director-image-box {
+        z-index: 2;
+    }
+
+    #director-message-box {
+        float: left;
+        padding: 0;
+        margin-top: 12%;
+        text-align: left;
+        margin-bottom: 7%;
+    }
+
+    #whiteH {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+    }
+
+    #whiteR {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        width: 50px;
+    }
+
+    #signsMessage{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+    }
+
+    #pinkSignsMessage{
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        width: 140px;
+    }
+
+        #director-message-box #titleCDMessage {
+            margin-left: -40px;
+            background-color: #F70080;
+            padding: 10px;
+            padding-left: 50px;
+            padding-right: 90px;
+            font-family: 'Telegraf-UltraBold';
+            color: white;
+            font-size: 4rem;
+            position: relative;
+        }
+
+        #director-message-box h3 {
+            font-size: 24px;
+            color: #313a48;
+            font-family: proximanova-light;
+        }
+
+        #director-message-box p {
+            font-size: 18px;
+            margin: 0;
+            color: #666666;
+        }
+
+
+    #funding {
+        font-size: 45px;
+        font-family: graphik-bold;
+        text-align: right;
+        font-style: italic;
+        color: #ea008a;
+    }
+
+    #fund-detail {
+        font-size: 45px;
+        font-family: graphik-bold;
+        font-style: italic;
+        text-align: right;
+    }
+
+/**
+    #challenge {
+        background-image: url('../../images/school/2018/challenge.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 900px;
+    }
+    **/
+
+    #challenge {
+        height: 800px;
+        padding: 5% 10%;
+        border-bottom: 2px solid #FFE200;
+        position: relative;
+    }
+
+    #challengeContent{
+        z-index: 2;
+    }
+
+    #challengeTitle {
+        font-size: 5rem;
+        color: #005FF1;
+        font-family: Telegraf-UltraBold;
+        margin-top: -6px;
+    }
+
+    #challengeSubtitle {
+        font-family: Telegraf-Regular;
+        font-size: 2rem;
+        letter-spacing: 8px;
+    }
+
+    #challengeDescription {
+        font-size: 3rem;
+        color: black;
+        font-family: Telegraf-UltraBold;
+    }
+
+    #challengeBtn svg{
+        margin-top: 60px;
+    }
+
+    #challengePeopleImg {
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 20%;
+        z-index: 1;
+    }
+
+    #challengeBGImg {
+        position: absolute;
+        bottom: -2px;
+        right: 0;
+        width: 80%;
+        z-index: 1;
+    }
+
+    #compete {
+        position: relative;
+    }
+    
+    #compete a {
+        text-decoration: none;
+    }
+
+    #competeFigs {
+        position: absolute;
+        top: 0;
+        left: 20%;
+        width: 30%;
+    }
+
+    .pink-title {
+        color: #ED0080;
+        font-family: Telegraf-UltraBold;
+        font-size: 7rem;
+    }
+
+    #competeLines {
+        width: 90%;
+        margin-top: -48px;
+        margin-bottom: -20px;
+        display: block;
+    }
+
+    #competeLineXS {
+        position: absolute;
+        right: 50%;
+        height: 100px;
+    }
+
+    .compete-step h4{
+        font-family: Telegraf-UltraBold;
+        font-size: 2rem;        
+        padding: 4px 10px;
+        margin: 4px auto;        
+        border-radius: 20px;
+        width: fit-content;
+        border: 1px solid #F70080;
+    }
+
+   
+    .compete-step.odd-step h4 {
+        color: white;        
+        background-color: #ED0080;         
+    }
+
+
+    .compete-step.even-step h4 {
+        color: black;
+        background-color: white;
+
+    }
+
+    .compete-step p {
+        line-height: 1.1;
+        font-size: 1.7rem;
+        color: black;
+        margin-top: 9px;
+    }
+
+    .step-icon {
+        width: 60px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #competeDivLine {
+        margin-top: -46px;
+        z-index: 1;
+        border-top: 1px solid #F70080;
+        margin-bottom: 50px;
+    }
+
+    #competeDivFigs {
+        width: 250px;
+        display: block;
+        z-index: 2;
+        margin: 0 auto;
+    }
+
+    #eventFigs {
+        position: absolute;
+        bottom: -4px;
+        left: -15px;
+        width: 140px;
+    }
+
+
+    #event-detail {
+        margin-top: 15%;
+        margin-left: 12%;
+        background-color: white;
+        position: absolute;
+        border-radius: 60px;
+        z-index: 1;
+        height: 80px;
+        font-family: graphik-bold;
+        font-style: italic;
+    }
+
+    div#eventContainer {
+        padding-bottom: 150px;
+    }
+
+     #eventDetails {
+            margin-top: 3rem;
+        }
+
+        #event-detail span {
+            color: #FC178A;
+        }
+
+    #event .nav {
+        border-bottom: none;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+        #event .nav li a {
+            background-color: #9CA5B1;
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            -moz-border-radius: 40px;
+            -webkit-border-radius: 40px;
+            border: none;
+            padding: 8px 0 0 0;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        #event .nav li.active a {
+            background-color: #FC178A;
+        }
+
+
+    #event .tab-content {
+        margin-top: 4%;
+        color: black;
+    }
+
+    #event .tab-content *{
+        color: black;
+    }
+
+
+    .event-title {
+        font-family: Telegraf-UltraBold;
+        font-size: 2rem;
+        color: black;
+        margin: 0;
+    }
+
+    #event-time, #event-time-1, #event-time-2, #event-venue, #event-info, #event-info-2 {
+        font-family: graphik-regular;
+        font-size: 20px;
+        color: white;
+        text-justify: inter-word;
+    }
+
+    #event-info {
+        margin-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #event-line {
+        left: 8%;
+    }
+
+    #event-nav {
+        margin-top: 1%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #eventsCarousel, #eventsCarouselMob {
+        margin-top: 70px;
+    }
+
+    #eventsCarousel .item.row.active {
+        height: 300px;
+    }
+
+    .event-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    #eventsCarousel .event-container, #eventsCarouselMob .event-container {
+        padding: 30px;
+    }
+
+a.carousel-control {
+    font-size: 14px;
+    top: 20%;
+}
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
+    margin-left: -8px;
+}
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+    margin-right: -5px;
+}
+    .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    top: 27%;
+}
+
+ 
+    .event-container .event-info {
+        text-align: left;
+        position: relative;
+        padding: 40px 20px 20px 20px;
+        background-color: #EFEFEF;
+        height: 130px;
+    }
+
+    .event-info .event-date {
+      display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "day month"
+            "day year";
+        background-color: #E3007F;
+        padding: 10px 15px 8px 0px;
+        font-family: Telegraf-Regular;
+        color: white;
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        top: -40px;
+        left: -30px;
+    }
+
+    .event-date-figs{
+        display: block;
+        width: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+    }
+
+    .event-date .day { 
+        grid-area: day;
+        margin: auto 0;
+        font-family: Telegraf-UltraBold;
+        text-align: center;
+    }
+
+    .event-date .month { 
+        grid-area: month;
+        text-align: left;
+    }
+
+    .event-date .year { 
+        grid-area: year;
+        text-align: left;
+    }
+
+
+    .event-date h4 {
+        margin: auto 0;
+    }
+
+    .event-modal .modal-dialog {
+        width: 90%;
+        /*margin: 10% auto;*/
+        max-width: 1170px;
+    }
+
+    .event-modal .modal-content {
+        position: relative;
+        padding: 0 15%;
+    }
+
+    .event-modal .event-container{
+        padding: 0 5%;
+    }
+
+    .event-info-container {        
+        padding: 0 10%;
+    }
+
+
+    .event-modal .event-info {
+        padding-top: 10px;
+        height: fit-content;
+    }
+
+    .event-modal .event-title {
+        color:#E3007F;
+        font-size: 3rem;
+    }
+    
+
+    #eventModalFigs1 {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 90px;
+    }
+
+    #eventModalFigs2 {
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        width: 390px;
+    }
+
+    .event-modal .modal-container {
+        width: 100%;
+    }
+
+    .event-modal {
+        background-color: rgba(255,255,255,.5)!important;
+        backdrop-filter: blur(25px) saturate(180%);
+        -webkit-backdrop-filter: blur(25px) saturate(180%);
+    }
+
+    .event-modal .modal-header .close {
+        font-family: 'Telegraf-UltraBold';
+        font-size: 40px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+
+    .event-modal .modal-header {
+        border-bottom: 0px;
+    }
+
+    .event-modal-title {
+        font-family: 'Telegraf-UltraBold';
+        color: #ED0080;
+        font-size: 8rem;
+        line-height: 1.2;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .add-to-calendar{
+        background-color: #EFEFEF;
+        padding: 3px 20px;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: block;
+        width: fit-content;
+    }
+
+    .add-to-calendar span{
+        background-color: #FAD3D6;
+        line-height: 1.1;
+        color: #E3007F;
+    }
+
+    h2.event-modal-infobox {
+        font-family: 'Telegraf-UltraBold';
+        color: black;
+        text-transform: capitalize;
+        font-size: 2rem;
+        padding-left: 47px;
+        border: 2px solid #E3007F;
+        line-height: 1;
+        padding-top: 10px;
+        padding-bottom: 8px;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    h2.event-modal-infobox svg {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .event-modal .event-description {
+        margin-bottom: 180px;
+    }
+
+    .event-description h3 {
+        font-family: 'Telegraf-UltraBold';
+        color: #E3007F;        
+        font-size: 1.8rem;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .event-description p {
+        color: #787878;           
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+
+    #video-detail {
+        padding-top: 50px;
+        padding-bottom: 70px;
+        padding-left: 80px;
+    }
+
+        #video-detail h1, #video-detail h2 {
+            font-size: 52px;
+            color: #000000;
+            padding-top: 10px;
+            text-align: left;
+            font-family: proximanova-light;
+        }
+
+        #video-detail h2 {
+            font-family: proximanova-bold;
+            margin-top: 10px;
+        }
+
+        #video-detail h4 {
+            font-size: 24px;
+            color: #ea008a;
+        }
+
+    .button1, .button2 {
+        padding: 0;
+    }
+
+        .button1 a:hover, .button2 a:hover {
+            text-decoration: none;
+        }
+
+    .button2 {
+        padding-left: 20px;
+    }
+
+
+    #p1 {
+        font-family: graphik-light;
+        font-size: 25px;
+        color: #424242;
+    }
+
+        #p1 > span {
+            font-family: graphik-bold;
+        }
+
+    #p2 {
+        font-family: graphik-regular-italic;
+        font-size: 13px;
+        color: #707070;
+    }
+
+    .challenge-button-register {
+        padding: 5px 50px;
+        border-radius: 50px;
+        text-align: center;
+        background-color: #FF069A;
+        font-size: 3rem;
+        font-family: graphik-black;
+        color: white;
+        margin-left: 20px;
+    }
+
+    .challenge-button-details {
+        padding: 5px 55px;
+        border-radius: 18px;
+        text-align: center;
+        border-color: #FF3964;
+        font-size: 16px;
+        font-family: graphik-medium;
+        color: #000000;
+        background: transparent;
+        border-width: 3px;
+    }
+
+
+    .video-container {
+        height: auto;
+        display: block;
+        position: relative;
+        padding: 60px 0 0 50px;
+    }
+
+        .video-container a, .video-container a:active, .video-container a:hover {
+            outline: none;
+        }
+
+        .video-container img {
+            width: 300px;
+        }
+
+        .video-container p {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+    .video {
+        height: 398px;
+        width: 398px;
+        background-color: transparent;
+    }
+
+/*--prize section--*/
+
+    #prize{
+        background-image: url('/images/school/prize-bg.png');
+        background-size: cover;
+        position: relative;
+        min-height: 300px;
+    }
+
+    #prize-img-box, #prize-text-box {
+        min-height: 300px;
+    }
+
+    #prize img {
+        width: 100%;
+        max-width: 700px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #prize h1 {
+        color: white;
+        font-family: Telegraf-UltraBold;
+        font-size: 6rem;
+        position: absolute;
+        top: 22%;
+        padding-left: 30px;
+    }
+
+    /*--compete section--*/
+
+    #compete {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: #ffffff;
+    }
+
+    .arrow {
+        padding-top: 80px;
+        padding-left: 15px;
+    }
+
+    #easy {
+        text-align: center;
+        font-size: 42px;
+        color: #ff008a;
+        font-family: graphik-bold;
+        font-style: italic;
+    }
+
+
+        #easy > span {
+            font-size: 42px;
+            text-align: center;
+            font-family: graphik-bold;
+            font-style: italic;
+            color: black;
+        }
+
+
+    #compete h2, #compete h3 {
+        font-size: 14px;
+    }
+
+    #compete h2 {
+        font-family: graphik-bold;
+        color: #ff008a;
+    }
+
+    #compete h3 {
+        font-family: graphik-light;
+        margin-top: 0;
+    }
+
+    #challenge-process {
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    /*--details section--*/
+
+    /*details*/
+    #details {
+        color: black;
+        position: relative;
+    }
+
+    .faux-bg {
+        height: 550px;
+    }
+
+
+
+    /*billboard*/
+
+    #billboard {
+        background-image: url(/images/school/billboard-bg.png);
+        background-size: cover;
+        height:400px;
+        padding: 50px;
+    }
+
+    div#billboard-list {
+        margin-top: 40px;
+    }
+
+
+    #billboardFigs{
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+        #billboard .leadingschool-row {
+            margin-bottom: 20px;
+            min-height: 70px;
+        }
+
+        .leadingschool-col {
+            position: relative;
+        }
+
+        #billboard .vl {
+            border-left: 1px solid white;
+            height: 89%;
+            position: absolute;
+            left: 74px;
+            top: -6px;
+        }
+
+        #billboard h1 {
+            color: #ffffff;
+            font-size: 7rem;
+            line-height: .7;
+            font-family: Telegraf-UltraBold;
+            margin: 0;
+        }
+
+
+        #billboard h2 {
+            margin: 0;
+            font-size: 2rem;
+            color: white;
+            font-family: Telegraf-UltraBold;            
+        }
+
+        #billboard h3 {
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 40px;
+            margin-top: 0;
+        }
+
+        #billboard .h4 {
+            font-size: 2rem;
+            font-family: Telegraf-Regular;
+            color: #ffffff;
+        }
+
+        #billboard .row .col-md-1 {
+            text-align: center;
+        }
+
+        #billboard .row .col-md-11 {
+            padding-left: 46px;
+        }
+
+    .billboard-circle {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background: #9ca5b2;
+    }
+
+    /*--judges section--*/
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+
+    #judges {
+        padding-top: 100px;
+        background: #ffffff;
+        padding-bottom: 30px;
+    }
+
+    a.readmore-js-toggle {
+        text-align: right;
+    }
+
+    a.readmore-js-toggle:hover, a.readmore-js-toggle:focus {
+        color: #BE006B!important;
+    }
+
+
+    #judgesFigs {
+        max-width: 80%;
+        display: block;
+        float: right;
+    }
+
+
+/*
+        #judges .row {
+            margin-bottom: -15px;
+        }
+
+            #judges .row .col-md-6 {
+                padding-right: 6px;
+            }
+        */
+        #judges .judge {
+            min-height: 250px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+    .square-image {
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+        border: solid 2px #EE0080;
+        border-radius: 20px;
+    }
+
+    .judge-img-box{
+        position: relative;
+        width: fit-content;
+    }
+
+    .judge-info-box{
+        position: relative;
+        width: fit-content;
+        float: left;
+        margin-top: 15%;
+    }
+
+    h4.judge-title {
+        margin-left: -35px;
+        margin-top: -5px;
+    }
+
+    .judge-img-figs {
+        position: absolute;
+        bottom: 0;
+        right: -35px;
+        width: 70px;
+    }
+
+    #judges .row .col-md-6 .col-md-12 .col-md-7 {
+        display: table-cell;
+        vertical-align: middle;
+        float: none;
+        padding-left: 20px;
+    }
+
+    h2.judge-name {
+        color: #ff008a;
+        font-size: 2.7rem;
+        font-family: Telegraf-UltraBold;
+    }
+
+    h2.judge-name span{
+        color: black;
+        font-size: 2.7rem;
+        font-family: Telegraf-UltraBold;
+    }
+
+    h2.judge-titlee{
+        color: #303947;
+        font-size: 18px;
+        font-family: proximanova-light;
+    }
+
+    #judges .h4 {
+        font-size: 2rem;
+        padding: 15px 20px;
+        line-height: 1.2;
+        border: 1px solid #969696;
+        border-radius: 30px;
+        color: #666666
+    }
+
+    .readmore-js-toggle, .readmore-js-section{
+        color: #ea008a;
+    }
+
+    .vcenter {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+
+    /*--staff section--*/
+
+    .title-pink-bar{
+        height: 100px;
+        background-color: #ED0080;
+        color: white;
+    }
+
+    .title-pink-bar svg{
+        width: 100px
+    }
+
+    .title-pink-bar h2 {
+        font-family: 'Telegraf-UltraBold';
+        font-size: 5.5rem;
+        text-align: center;
+    }
+
+    .title-pink-bar .vl-1 {
+        border-left: 5px solid white;
+        height: 100%;
+        position: absolute;
+        left: 115px;
+    }
+
+    .title-pink-bar .vl-2 {
+        border-left: 5px solid white;
+        height: 100%;
+        position: absolute;
+        right: 115px;
+    }
+
+    .firstFig{
+        float: left;
+    }
+
+    .secondFig{
+        float: right;
+    }
+
+    #staff, #sponsor, #press {
+        padding: 50px 0!important;
+    }
+
+    #committee-box {
+        padding: 50px 0;
+        color: #666666;
+    }
+
+    #committee-title {
+        font-size: 36px;
+        text-align: left;
+        color: #ea008a;
+        font-family: graphik-black;
+    }
+
+    #committee {
+        font-size: 36px;
+        text-align: left;
+        color: #000;
+        font-family: graphik-black;
+    }
+
+    #committee-message {
+        font-size: 2rem;
+        text-align: left;
+        text-justify: inter-word;
+        font-family: Telegraf-Regular;
+    }
+
+    #Carousel_staff {
+        width: 100%;
+        padding-bottom: 100px;
+        height: 350px;
+    }
+
+    #carousel-inner {
+        top: 60px;
+    }
+
+    .staff-name {
+        color: black;
+        font-family: 'Telegraf-UltraBold';
+        font-size: 1.2em;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .position {
+        font-family: 'Telegraf-Regular';
+        font-size: 1.8rem;
+        color: black;
+            margin-top: -7px;
+    }
+
+    .staff-image {
+        height: 160px;
+        width: 160px;
+    }
+
+    .icon-row {
+        width: 200px;
+        color: #9CA5B1;
+        font-size: 20px;
+    }
+
+        .icon-row ul {
+            margin: 0;
+        }
+
+            .icon-row ul li a {
+                color: #9CA5B1;
+            }
+
+
+
+    /* Sponsor slider*/
+
+    .carousel {
+        margin-bottom: 0;
+        /**padding: 0 40px 30px 40px;**/
+    }
+
+    #sponsor #Carousel {
+        margin-top: 100px;
+    }
+
+    #sponsor #Carousel img{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    /* The controlsy */
+    .carousel-control {
+        left: -12px;
+        height: 40px;
+        width: 40px;
+        background: none repeat scroll 0 0 #222222;
+        border: 4px solid #FFFFFF;
+        border-radius: 23px 23px 23px 23px;
+        margin-top: 90px;
+    }
+
+        .carousel-control.right {
+            right: -12px;
+        }
+    /* The indicators */
+    .carousel-indicators {
+        right: 50%;
+        top: auto;
+        bottom: -50px;
+        margin-right: -19px;
+    }
+        /* The colour of the indicators */
+        .carousel-indicators li {
+            background: #707070;
+        }
+
+        .carousel-indicators .active {
+            background: #000000;
+        }
+
+
+
+
+
+
+.no-image-sponsor {
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    display: block;
+}
+
+    #sponsor {
+        margin-bottom: 120px;
+    }
+
+        #sponsor h1 {
+            margin-left: 10%;
+            margin-bottom: 5%;
+            font-family: graphik-bold;
+            font-style: italic;
+            font-size: 42px;
+        }
+
+    #globe {
+        position: absolute;
+        margin-left: 67%;
+        margin-top: 10%;
+    }
+
+        #globe img {
+            width: 300px;
+        }
+
+    /* Sponsor End */
+
+    /*--press section--*/
+
+    #press {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+        #press h1 {
+            color: #FF149F;
+            font-family: graphik-bold;
+            font-style: italic;
+            font-size: 42px;
+            margin-top: 0;
+            padding-bottom: 20px;
+            margin-left: 18%;
+        }
+
+    .press-article {
+        padding: 0;
+        height: 350px;
+        margin-bottom: 50px;
+        background-color: #EFEFEF;
+        position: relative;
+    }
+
+    .press-article #pressFigs {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 40px;
+    }
+
+    .article-image {
+        width: 100%;
+        height: 177px;
+        overflow: hidden;
+    }
+
+        .article-image img {
+            width: 100%;
+        }
+
+    .article-title {
+        font-size: 2.5rem;
+        line-height: 1;
+        color: black;
+        font-family: Telegraf-UltraBold;
+    }
+
+    .article-info {
+        padding: 15px 8px 40px 18px;
+    }
+
+        .article-title a {
+            color: black;
+            text-decoration: none;
+        }
+
+            .article-title a:hover {
+                color: #EA008A;
+            }
+
+    .article-description {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Telegraf-Regular;
+        margin-top: 10px;
+        color: black;
+        max-height: 70px;
+        overflow: hidden;
+    }
+
+        .article-description a {
+            padding-left: 4px;
+            color: #FC178A;
+        }
+
+    /*--footer--*/
+
+    #footer .list-unstyled a {
+        font-weight: 700;
+        font-size: 1.8em;
+        line-height: 1.5em;
+        color: white;
+        font-family: Telegraf-UltraBold;
+        line-height: 2;
+    }
+
+    #footer h2 {
+        font-weight: 700;
+        font-size: 3.5em;
+        color: #e6007f!important;
+        line-height: 1.2em;
+        font-family: Telegraf-UltraBold;
+        text-align: left;
+    }
+
+    #footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: white;
+    }
+
+    span#logoFooter {
+        max-width: 80%;
+        display: block;
+        margin-top: 50px;        
+        margin: 50px auto;
+    }
+
+    #footerCopyright{
+        color: black;
+        font-family: Telegraf-Regular;
+        font-size: 16px;
+    }
+
+    #footer .social-links a {
+        border-radius: 50px;
+        margin: 0 10px 0 0;
+        color: #E4147F;
+        padding: 10px 9px 8px;
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    #footer .social-links {
+        font-family: social-icons;
+        margin: 20px 0;
+        text-align: left;
+    }    
+
+    .icon-facebook:before {
+        content: "b";
+    }    
+    .icon-instagram:before {
+        content: "a";
+    }
+    .icon-youtube-play:before {
+        content: "d";
+    }
+    .icon-linkedin:before {
+        content: "e";
+    }
+    .icon-twitter:before {
+        content: "c";
+    }    
+    
+    
+
+    [class*=" icon-"]:before, [class^=icon-]:before, [data-icon]:before {
+        font-family: social-icons !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        speak: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container-fluid#footer {
+        padding: 0 0 50px 0;
+    }
+
+    #footer h5{
+        font-size: 2rem;
+    }
+
+
+    #footerBg {
+        height: 450px;
+        background-image: url(https://www.hultprize.org/wp-content/uploads/2021/01/FooterCollageWebb.jpg);
+        background-size: cover;
+        background-position: bottom;
+        margin-bottom: 50px;
+    }
+
+
+    .pink {
+        color: #ff008a;
+    }
+
+    /*aligns bottom logos to the bottom of the page*/
+    #clinton-logo {
+        padding-top: 23px;
+    }
+
+    #impact-logo {
+        padding-top: 80px;
+    }
+
+
+    /*--register section*/
+
+    input.mobile-number {
+        border: 0px;
+        border-radius: 30px;
+        padding: 6px 60px;
+        width: 100%;
+    }
+
+    .iti.iti--allow-dropdown {
+        width: 100%;
+    }
+
+    .iti__selected-flag {
+        border-radius: 30px 0 0 30px;
+    }
+
+    .iti__selected-dial-code{
+        display: none;
+    }
+
+    #registrationForm {
+        margin: 50px 0;
+    }
+
+
+    .team-member {
+        margin: 0 20px 35px;
+    }
+
+        .team-member .form-group {
+            display: block;
+        }
+
+            .team-member .form-group > div.col-xs-3 {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+        .team-member > label {
+            margin-top: 5px;
+        }
+
+    #register {
+        background: #EFEFEF;
+        position: relative;
+    }
+
+        #register .terms a {
+            color: #E3007F;
+        }
+
+    #regFigs {
+        position: absolute;
+        width: 100px;
+        left: 0px;
+        top: 40%;
+    }
+
+    #regFigs2 {
+        position: absolute;
+        width: 150px;
+        right: 0px;
+        bottom: -1px;
+    }
+
+    #register-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    span#formTitleFig {
+        max-width: 200px;
+        display: block;
+        float: right;
+    }
+
+    #register h1 {
+        margin-top: 108px;
+        text-align: left;
+    }
+
+    #register h2 {
+        text-align: left;
+        color: #000000;
+        font-size: 3rem;
+        font-family: Telegraf-UltraBold;
+        padding-left: 21%;
+        padding-right: 15px;
+        border-bottom: 1px solid #ED0080;
+        width: fit-content;
+        max-width: 76%;
+    }
+
+
+    #register .terms {
+        font-size: 1.6rem;
+        font-family: 'Telegraf-Regular';
+        color: #969696;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
+   
+
+  
+        #form-container .alert {
+            margin-top: 20px;
+        }
+
+    #member-requirements h6 {
+        font-size: 1.5rem;
+        color: #ff008a;
+        font-family: 'Telegraf-Regular';
+        line-height: 1.4;
+        margin-left: 25px;
+    }
+
+    .submit-button {
+        padding-top: 20px;
+    }
+
+    .reg-label {
+        font-size: 2rem;
+        color: black;
+        font-family: Telegraf-UltraBold;
+    }
+
+        .reg-label label {
+            font-size: 20px;
+            padding-left: 20px;
+            color: #000000;
+            font-family: proximanova-light;
+        }
+
+        .reg-label span {
+            color: #ea008a;
+        }
+
+    .padding-bottom-10 {
+        padding-bottom: 10px;
+    }
+
+    .first-row {
+        padding-top: 50px;
+    }
+
+    .last-row {
+        padding-bottom: 20px;
+    }
+
+    .no-display {
+        display: none;
+    }
+
+    .no-padding {
+        padding: 0;
+    }
+
+    .reg-input-pink, .reg-input-black, .reg-input-phone, .reg-input-int-phone, .reg-input-startup {
+        font-size: 14px;
+        border-radius: 25px;
+        border: none;
+        padding: 5px 20px;
+        color: #000000;
+        height: auto;
+        box-shadow: none;
+        font-family: Telegraf-Regular;
+    }
+
+    .reg-input-pink::placeholder, .reg-input-black::placeholder, .reg-input-phone::placeholder, .reg-input-int-phone::placeholder, .reg-input-startup::placeholder,  .mobile-number::placeholder{
+        color: #C9C9C9;
+    }
+
+    .reg-input-black {
+        border: none;
+        box-shadow: none;
+    }
+
+    .reg-input-phone {
+        width: 118px;
+    }
+
+    .reg-input-phone-full-width {
+        width: 106px;
+    }
+
+    .reg-input-startup {
+        border-radius: 20px;
+        height: 160px;
+    }
+
+    .reg-label {
+        margin-bottom: 20px;
+    }
+
+    #video-popup {
+    }
+
+        #video-popup .modal-dialog {
+            margin-top: 70px;
+            width: 900px;
+        }
+
+        #video-popup .modal-body {
+            padding: 0;
+        }
+
+        #video-popup .modal-close {
+            position: absolute;
+            top: -70px;
+            right: -70px;
+        }
+
+    .modal-backdrop.in {
+        opacity: .72;
+    }
+
+    .navbar-nav.school-social-links > li > a {
+        color: #EA008A;
+        background-color: #ffffff;
+        border-radius: 32px;
+        -webkit-border-radius: 32px;
+        -moz-border-radius: 32px;
+        font-size: 16px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        padding: 8px 0 0 0;
+    }
+
+        .navbar-nav.school-social-links > li > a:hover {
+            color: #EA008A;
+            background-color: #ffffff;
+        }
+
+    @media(min-width: 1020px){
+        #footer .container {
+            width: 80%;
+        }
+    }
+        
+
+    @media (max-width: 900px) {
+
+        #judges .judge {
+            padding-left: 15px; 
+            padding-right: 15px; 
+        }
+
+
+        .school-social-links.navbar-nav.navbar-right:last-child {
+            text-align: center;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-right: 0;
+        }
+
+        .navbar-nav.school-social-links > li {
+            float: left;
+        }
+
+            .navbar-nav.school-social-links > li > a {
+                margin: 10px;
+            }
+
+        #director-message-box #titleCDMessage {
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 3rem;
+        }
+
+        #whiteR{
+            right: 0;
+        }
+
+        .director-image {
+            float: unset;
+        }
+
+
+    }
+
+    .staff-members {
+        padding: 0 60px;
+    }
+
+    .staff-member {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .staff-member-social {
+        height: 30px;
+        padding: 0;
+        width: 120px;
+        margin: -5px auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .staff-member-social li {
+            margin: 0 10px 0 0;
+            padding: 0;
+            float: left;
+            display: inline;
+        }
+
+            .staff-member-social li a {
+                width: 30px;
+                height: 30px;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                padding: 6px 0 0px 0;
+                display: block;
+                background-color: #E6007F;
+                border-radius: 50%;
+            }
+
+    .become-sponsor-box {
+        background-color: #303946;
+        text-align: center;
+    }
+
+        .become-sponsor-box h3 {
+            font-size: 22px;
+        }
+
+        .become-sponsor-box a {
+            background-color: #FFFFFF;
+            border-bottom: 2px solid #DC1081;
+            border-radius: 25px;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+        }
+
+    #winner h3 {
+        font-size: 20px;
+    }
+
+    .winner-image {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+
+    @media (max-width: 480px) {
+        /*
+      html {
+          -webkit-text-size-adjust: 100%;
+          -ms-text-size-adjust: 100%;
+           overflow-x: hidden;
+      }
+  
+      body {
+          font-family: graphik-regular;
+          overflow-x: hidden;
+          width: 100%;
+      }
+  
+     
+          .navbar {
+          min-height: 90px;
+          padding-top: 50px;
+      }
+      */
+
+        .event-modal-title {;
+            font-size: 7rem;
+            line-height: 1;
+        }
+
+        #eventModalFigs2 {
+            width: 290px;
+        }
+
+        .event-modal .modal-content {            
+            padding: 0;
+        }
+
+        .event-modal .event-container, .event-info-container {
+            padding: 0;
+        }
+
+        #winnerCaption svg {
+            width: 25px;
+            right: -25px;
+            top: -25px;
+        }
+
+        #winnerOrgName{
+            font-size: 2rem;
+            padding-bottom: 30px;
+        }
+
+        #logoBanner {
+            width: 200px;
+            height: 200px;
+        }
+
+        #bannerWinnerLogo1, #bannerWinnerLogo2 {
+            width: 150px;
+            height: 150px;
+        }
+
+        #billboardFigs {
+            width: 250px;
+        }
+
+        #billboard {
+            padding: 50px 35px;
+        }
+
+        .carousel-indicators {
+            bottom: -100px;
+        }
+
+        .carousel-indicators li {
+            width: 16px;
+            height: 16px;
+        }
+
+        .carousel-indicators .active {
+            width: 18px;
+            height: 18px;
+        }
+
+        .article-title {
+            font-size: 2rem;
+        }
+
+        #footer .container{
+            padding: 0 30px;
+        }
+
+        #footer h2 {
+            line-height: 1;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        #footerBg {
+            height: 150px;
+        }
+
+        .reg-input-phone-full-width {
+            width: 100%;
+        }
+
+        .reg-input-phone {
+            width: 100%;
+        }
+
+        #judges {
+            padding-bottom: 130px;
+        }
+
+        #judges .pink-title {
+            margin-bottom: 0px;
+        }
+
+        .team-member {
+            margin: 0px;
+        }
+
+        #register {
+            padding-bottom: 100px
+        }
+
+        #register h2 {
+            text-align: left;
+            font-size: 3rem;
+            padding-left: 27px;
+            padding-right: 0;
+            margin-top: 0;
+            padding-bottom: 10px;
+            max-width: 95%;
+        }
+
+        span#formTitleFig {
+            float: unset;
+            margin-left: 20px;
+        }
+
+        #register h1 {
+            margin-top: 14px;
+        }
+
+        .title-pink-bar h2 {
+            font-size: 3rem;
+            margin-top: 10px;
+        }
+
+        .judge-info-box {
+            margin-top: 0;
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .judge-img-box {
+            margin: 0 auto;
+        }
+
+        h4.judge-title {
+            margin-left: 0;
+            margin-top: -12px;
+        }
+
+        #judgesFigs {
+            max-width: 60%;
+            float: unset;
+            margin: 0 auto;
+        }
+
+        #billboard .leadingschool-row{
+            margin-bottom: 35px;
+        }
+
+        #billboard .row .col-md-11 {
+            padding-left: 18px;
+        }
+
+        .pink-title {
+            font-size: 5.3rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .title-pink-bar svg {
+            width: 80px;
+        }
+
+        .title-pink-bar {
+            height: 80px;
+        }
+
+        .title-pink-bar .vl-1 {
+            left: 90px;
+        }
+
+        .title-pink-bar .vl-2 {
+            right: 90px;
+        }
+
+        .compete-all-steps div.col-xs-12{
+            margin-bottom: 60px;
+            background-color: white;
+        }
+
+        .tazbinur{
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 65px
+        }
+
+        .tazbinur-img{
+            height: 300px;
+            width: 100%;
+            margin-top: -50px
+        }
+
+        .tazbinur-img img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: center
+        }
+
+        .tazbinur-banner{
+            width: 100%;
+            position: relative;
+            margin-bottom: 100px
+        }
+
+        .tazbinur-banner img{
+            width: 100%;
+            height: auto;
+            position: absolute;
+
+        }
+
+        .tazbinur-banner .textBx{
+            position: absolute;
+            z-index: 10;
+            top: 300px
+        }
+
+            .tazbinur-banner .textBx a {
+                display: block;
+                background-color: #E6007F;
+                color: white;
+                width: 300px;
+                margin: auto;
+                height: 35px;
+                text-transform: uppercase;
+                border-radius: 30px;
+                text-align: center;
+                line-height: 35px;
+                margin-top: 10px
+            }
+
+        #greeting .welcome {
+            font-size: 5rem;
+            line-height: 1.1;
+            margin-top: 16px;
+        }
+        .hashtag-box {
+            font-size: 2rem;
+            padding: 3px 5px 2px 0px;
+        }
+
+        #message {
+            background-image: none !important;
+            height: auto;
+            padding-top: 50px;
+            padding-bottom: 100px;
+            margin-bottom: 0%;
+        }
+
+        #funding, #fund-detail {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #message-mob {
+            margin-top: 15%;
+            font-size: 25px;
+            display: block !important;
+        }
+
+        #director-message-box {
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+            padding-bottom: 30px !important;
+            margin: 10px auto !important;
+            color: #666666;
+        }
+
+        #directr-image {
+            float: unset;
+        }
+
+        #challenge {
+            height: auto;
+            padding-bottom: 300px;
+        }
+
+        #challengeTitle {
+            font-size: 4.5rem;
+        }
+
+        #challengeSubtitle {
+            letter-spacing: 5px;
+        }
+
+        #challengeDescription {
+            font-size: 2.5rem;
+        }
+
+        #challengeBtn svg {
+            margin-top: 40px;
+        }
+
+        #challengePeopleImg {
+            width: 90%;
+            bottom: 20%;
+            left: 5%;
+        }
+
+        #compete {
+            padding-top: 100px;
+        }
+
+        #competeFigs {
+            left: 0%;
+            width: 100%;
+        }
+
+            #challenge > div {
+                margin-top: 10% !important;
+            }
+
+        #p1 {
+            font-family: graphik-bold;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+
+        #p2 {
+            font-family: graphik-bold;
+            font-size: 17px;
+            color: black;
+            text-align: center;
+        }
+
+        .carousel {
+            padding: 0;
+        }
+
+        .challenge-button-details {
+            border-color: white;
+            margin-top: 5%;
+            background-color: black;
+            height: 50px;
+            border-width: 3px;
+            padding: 0px 40px 0px 40px;
+            color: white;
+        }
+
+        #challenge-process h2, #challenge-process h3 {
+            font-size: 30px !important;
+        }
+
+        .event-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        #event .pink-title {
+            margin-bottom: 0px;
+        }
+
+        #event-title {
+            color: --hp-magenta;
+        }
+
+        .arrow {
+            transform: rotate(90deg);
+            margin-left: 24%;
+        }
+
+        #event-detail {
+            position: relative;
+            margin-top: 2% !important;
+            background-color: none !important;
+            border-radius: 0px !important;
+        }
+
+       
+
+        .faux-bg {
+            background-image: none !important;
+            background-color: black;
+            height: auto;
+        }
+
+        #event-line {
+            left: 0px !important;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        #details {
+            padding-top: 0px !important;
+            background-color: white;
+        }
+
+        #event-time-1, #event-time-2, #event-venue, #event-info, #event-info-2 {
+            text-align: left !important;
+            padding-top: 5px;
+            font-size: 25px;
+        }
+
+        #event-title {
+            text-align: left !important;
+            font-size: 33px !important;
+            color: var(--hp-magenta);
+        }
+
+        #billboard {
+            height: auto !important;
+        }
+
+        #billboard-list {
+            margin-left: 9%;
+        }
+
+        .billboard-circle {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        #billboard h1 {
+            margin-top: 5% !important;
+            margin-left: 10%;
+            margin-bottom: 8px;
+        }
+
+        #billboard h2 {
+            font-size: 2rem
+        }
+
+        #billboard h3 {
+            font-size: 14px;
+        }
+
+        #billboard .h4 {
+            font-size: 2rem
+        }
+               
+
+        #judges > .section > img {
+            height: 95px !important;
+        }
+
+        #staff {
+            padding-top: 0px !important;
+        }
+
+        .position {
+            color: black;
+        }
+
+        #message-box {
+            position: relative !important;
+            border-radius: 0px;
+            z-index: 1;
+            width: 100%;
+            padding: 0%;
+            margin-top: 0%;
+            margin-left: 0%;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: justify;
+        }
+
+        #Carousel_staff {
+            background-image: none !important;
+            width: 100%;
+        }
+
+
+        .carousel-inner {
+            margin-bottom: 20%;
+        }
+
+        #carousel-inner, #carousel-inner-mob {
+            left: 0% !important;
+            top: 20px !important;
+        }
+
+            #carousel-inner .position, .position #carousel-inner-mob {
+                color: white;
+            }
+
+            #carousel-inner img {
+                height: 100px !important;
+                width: 100px !important;
+            }
+
+            #carousel-inner-mob img {
+                height: 200px !important;
+                width: 200px !important;
+            }
+
+        #Carousel img {
+            height: 100px !important;
+            width: 100px !important;
+            margin-right: 10px;
+        }
+
+        #Carousel_m img {
+            height: 300px !important;
+            width: 300px !important;
+            max-width: 100%;
+            margin-right: 10px;
+            object-fit: contain;
+        }
+
+        #ojalados {
+            width: 100vw;
+            height: 40%;
+            margin-top: 10%;
+        }
+
+        #pinkSignsMessage{
+            width: 80px;
+        }
+
+        #prize h1 {
+            top: 0;
+            text-align: center;
+            font-size: 5rem;
+            padding: 0px;
+        }
+
+    }
+
+
+.top-events {
+    font-family: 'graphik-bold';
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-size: 5rem;
+    margin-left: 5rem;
+}
+
+.btn-mas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white!important;
+}
+
+.btn-mas:hover {
+    color: black;
+}
+
+#sponsor, #press, #staff {
+    overflow-x: hidden;
+}
+
+/** modal centered **/
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        content: " " !important;
+        height: 100% !important;
+    }
+}
+
+.modal-dialog {
+    display: inline-block !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+}
+
+@media(max-width: 480px) {
+    .tit-cha {
+        width: 100% !important;
+    }
+
+    .titmb {
+        font-size: 39px !important;
+    }
+
+    .chios {
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-top: 23px !important;
+    }
+
+    .btn-cha {
+        width: 39% !important;
+        margin-top: 3% !important;
+    }
+  
+    .compete-all-steps div.col-xs-12 {
+        margin-bottom: 60px;
+        background-color: white;
+    }
+
+    #challenge {
+        height: auto;
+        padding-bottom: 300px;
+    }
+
+    #mainBanner {
+        margin-top: 50px;
+    }
+
+    .divLine {
+        margin-top: 42px;
+    }
+
+    #faqFig1 {
+        width: 30px;
+        margin-top: -61px;
+        margin-right: 20px;
+    }
+
+
+    #faqFig2 {
+        width: 30px;
+        margin-top: -61px;
+        margin-left: 20px;
+    }
+
+    #apply {
+        height: fit-content;
+        padding: 100px 10px;
+    }
+
+    #applyTop .container {
+        text-align: center !important;
+    }
+
+    #applyTop img {
+        width: 300px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+
+    #applyPeople {
+        width: 90%;
+        margin-top: -60%;
+    }
+
+    #accelerator h2 {
+        text-align: center;
+        margin: 50px 20px;
+    }
+
+    #incentivesFigs4 {
+        width: 100px;
+    }
+
+    #incentivesFigs1 {
+        width: 200px;
+        right: 0;
+    }
+
+    #challengePeopleImg {
+        width: 90%;
+        bottom: 20%;
+        left: 5%;
+    }
+
+    #challengeDescription {
+        font-size: 2.5rem;
+    }
+
+    #challengeTitle {
+        font-size: 4.5rem;
+    }
+
+    #competeFigs {
+        left: 0%;
+        width: 100%;
+    }
+
+    .pink-title {
+        font-size: 5.3rem;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #faq .pink-title {
+        font-size: 3.5rem;
+        margin-top: 25px;
+    }
+
+    .becomeCDSubtitle h4 {
+        font-size: 2.5rem;
+    }
+
+    h3#challengeSubTitle {
+        letter-spacing: 5px;
+    }
+}
+
+@media(min-width: 720px) {
+    .pink-title {
+        font-size: 7rem;
+    }
+
+    #incentives {
+        padding: 40px 0;
+    }
+
+    #hosting .pink-title {
+        text-align: right;
+        font-size: 6rem;
+        padding-right: 6%;
+        margin-bottom: 80px;
+    }
+
+    #incentivesLines {
+        position: absolute;
+        top: 210px;
+        left: 0;
+        width: 80%;
+    }
+
+    #accelerator {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    #footerBg {
+        height: 450px;
+    }
+
+
+    #footer h2 {
+        font-size: 3.5em;
+        line-height: 1.2em;
+        text-align: left;
+    }
+
+    #logoBanner {
+        width: 400px;
+    }
+
+    .welcome-home {
+        font-size: 8rem;
+    }
+
+    #cdFigs {
+        top: 220px;
+    }
+
+    #becomeCDTitleImg {
+        margin-right: 50px;
+    }
+
+    .provition-item {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #compete .pink-title {
+        text-align: right;
+    }
+}
