@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' data-auto-a11y="true"></script>
 <title>問問秘境</title>
 <style>
 
@@ -56,13 +56,9 @@ body {
 .container {
     max-width: 540px;
   }
+.w3-hover-yellow:hover {
+background-color: #f1a137 !important;
 }
-
-@media (hover: hover) {
-    button:hover {
-        color:#000!important;
-        background-color:#ffeb3b!important
-    }
 }
 .w3-hover-yellow:hover {
 background-color: #f9da68 !important;
@@ -89,7 +85,7 @@ background-color: #f1a137 !important;
       <br>
       <p  class='fas' style='font-size:72px' id="dice"></p>
     <div class="links-container">
-      <button onclick="document.getElementById('dice').innerHTML = getRndDice();document.getElementById('question').innerHTML = getRndQuestion()" ontouchend="this.classList.add('w3-orange');" class="content w3-button w3-hover-yellow w3-hover-text-white w3-large w3-round w3-text-white w3-orange w3-border link" target="_blank">Roll Dice</button>
+      <button onclick="document.getElementById('dice').innerHTML = getRndDice(); document.getElementById('question').innerHTML = getRndQuestion()" ontouchend="this.classList.add('w3-orange');" class="content w3-button w3-hover-yellow w3-hover-text-white w3-large w3-round w3-text-white w3-orange w3-border link" target="_blank">Roll Dice</button>
     </div>
     <div class="w3-text-black">
     <p id="question" class="w3-large"><strong></strong></p>
