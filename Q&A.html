@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<h2>JavaScript Math.random()</h2>
+
+<p>Every time you click the button, getRndInteger(min, max) returns a random number between 0 
+and 9 (both included):</p>
+<i  class='fas' style='font-size:72px' id="dice"></i>
+<br>
+<br>
+<button onclick="document.getElementById('dice').innerHTML = getRndDice();document.getElementById('question').innerHTML = getRndQuestion()">Click Me</button>
+
+<p id="question"></p>
+
+
+<script>
+function getRndDice() {
+  const dices = ["&#xf523;", "&#xf524;", "&#xf525;", "&#xf526;", "&#xf527;", "&#xf528;"];
+  return dices[Math.floor(Math.random() * dices.length)];
+}
+function getRndQuestion() {
+  const questions = ["他最害怕的東西是什麼？", "他最喜歡吃的東西是什麼？", "他最害怕的東西是什麼？", "彼此第一次見面的地點？", "他最喜歡的電影類型是？"];
+  return questions[Math.floor(Math.random() * questions.length)];
+}
+</script>
+
+</body>
+</html>
