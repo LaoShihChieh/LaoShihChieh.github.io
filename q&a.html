@@ -98,6 +98,14 @@ background-color: rgba(156, 39, 176, 0.6) !important;
 </div>
   </div>
     <script>
+      function fix()
+{
+    var el = this;
+    var par = el.parentNode;
+    var next = el.nextSibling;
+    par.removeChild(el);
+    setTimeout(function() {par.insertBefore(el, next);}, 0)
+}
 function getRndDice() {
   const dices = ["&#xf523;", "&#xf524;", "&#xf525;", "&#xf526;", "&#xf527;", "&#xf528;"];
   return dices[Math.floor(Math.random() * dices.length)];
