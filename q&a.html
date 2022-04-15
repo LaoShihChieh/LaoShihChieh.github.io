@@ -84,7 +84,7 @@ background-color: rgba(156, 39, 176, 0.6) !important;
       <br>
       <p  class='fas' style='font-size:72px' id="dice"></p>
     <div class="links-container">
-      <button onclick="document.getElementById('dice').innerHTML = getRndDice();document.getElementById('question').innerHTML = getRndQuestion()" ontouchend="this.onclick=fix" class="w3-button w3-hover-yellow w3-hover-text-white w3-large w3-round w3-text-white w3-orange w3-border link" target="_blank">Roll Dice</button>
+      <button onclick="document.getElementById('dice').innerHTML = getRndDice();document.getElementById('question').innerHTML = getRndQuestion()" class="w3-button w3-hover-yellow w3-hover-text-white w3-large w3-round w3-text-white w3-orange w3-border link" target="_blank">Roll Dice</button>
     </div>
     <div class="w3-text-black">
     <p id="question" class="w3-large"><strong></strong></p>
@@ -98,14 +98,6 @@ background-color: rgba(156, 39, 176, 0.6) !important;
 </div>
   </div>
     <script>
-      function fix()
-{
-    var el = this;
-    var par = el.parentNode;
-    var next = el.nextSibling;
-    par.removeChild(el);
-    setTimeout(function() {par.insertBefore(el, next);}, 0)
-}
 function getRndDice() {
   const dices = ["&#xf523;", "&#xf524;", "&#xf525;", "&#xf526;", "&#xf527;", "&#xf528;"];
   return dices[Math.floor(Math.random() * dices.length)];
