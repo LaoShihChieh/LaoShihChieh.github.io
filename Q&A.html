@@ -1,21 +1,97 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<title>Andrew's CSIE Project site</title>
+<style>
 
-<h2>JavaScript Math.random()</h2>
+body {
+    background-image: url(https://i0.wp.com/chickensoupfamily.com/wp-content/uploads/2020/01/e5958fe5958fe7a595e5a283e6a18ce9818ae4bb8be7b4b91225.001.jpeg); /* The image used for background*/
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: right; /* Center the image */
 
-<p>Every time you click the button, getRndInteger(min, max) returns a random number between 0 
-and 9 (both included):</p>
-<i  class='fas' style='font-size:72px' id="dice"></i>
-<br>
-<br>
-<button onclick="document.getElementById('dice').innerHTML = getRndDice();document.getElementById('question').innerHTML = getRndQuestion()">Click Me</button>
+    
+}
 
-<p id="question"></p>
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  jusify-content: center;
+  align-items: center;
+}
+
+.link {
+  min-width: 50% !important;
+}
+
+@media (min-width: 1200px) .container {
+  max-width: 1140px;
+}
+@media (min-width: 992px) .container {
+  max-width: 960px;
+}
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+  }
+
+.link {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+  }
+}
+
+.w3-purple, .w3-hover-purple:hover {
+color: #fff!important;
+background-color: rgba(156, 39, 176, 0.6) !important;
+}
+</style>
+  </head>
 
 
-<script>
+  <body class="w3-white">
+    <!-- Content container -->
+    <div class="container">
+
+      <!-- Image and name container. Change to your picture here. -->
+    <div class="image-container">
+    <img src="https://i0.wp.com/chickensoupfamily.com/wp-content/uploads/2020/10/cropped-%E9%9B%9E%E6%B9%AF%E4%BE%86%E4%BA%86_%E9%A0%81%E9%A6%96-5.png" class="w3-margin" max-width="20%" height="100px" style="border-radius: 50%; alt=">
+     <span class="w3-tag w3-large w3-round w3-orange w3-text-white"><strong><a style='font-size: 40px; letter-spacing: 7px;'>問問秘境</a>
+     <br>
+ <a>Questions about us </a>
+ </strong>
+ </span> 
+      <br>
+      <p  class='fas' style='font-size:72px' id="dice"></p>
+    <div class="links-container">
+      <button onclick="document.getElementById('dice').innerHTML = getRndDice();document.getElementById('question').innerHTML = getRndQuestion()" class="w3-button w3-hover-yellow w3-hover-text-white w3-large w3-round w3-text-white w3-orange w3-border link" target="_blank">Roll Dice</button>
+    </div>
+    <div class="w3-text-black">
+    <p id="question" class="w3-large"><strong></strong></p>
+      </div>
+</div>
+  </div>
+    <script>
 function getRndDice() {
   const dices = ["&#xf523;", "&#xf524;", "&#xf525;", "&#xf526;", "&#xf527;", "&#xf528;"];
   return dices[Math.floor(Math.random() * dices.length)];
@@ -24,7 +100,6 @@ function getRndQuestion() {
   const questions = ["他最害怕的東西是什麼？", "他最喜歡吃的東西是什麼？", "他最害怕的東西是什麼？", "彼此第一次見面的地點？", "他最喜歡的電影類型是？"];
   return questions[Math.floor(Math.random() * questions.length)];
 }
-</script>
-
-</body>
+</script>  
+  </body>  
 </html>
