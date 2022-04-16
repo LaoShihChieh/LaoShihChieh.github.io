@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://i0.wp.com/chickensoupfamily.com/wp-content/uploads/2022/03/cropped-05_%E9%9B%9E%E6%B9%AF%E4%BE%86%E4%BA%86logo_%E5%9C%93.png" rel="shortcut icon" type="image/x-icon">
+    <script src='https://kit.fontawesome.com/a076d05399.js' data-auto-a11y="true"></script>
+    <title>問問秘境 | 聯誼版</title>
+    <style>
+        body {
+            background-image: url(https://i0.wp.com/chickensoupfamily.com/wp-content/uploads/2020/01/e5958fe5958fe7a595e5a283e6a18ce9818ae4bb8be7b4b91225.001.jpeg);
+            /* The image used for background*/
+            background-position: right;
+        }
+        
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .image-container {
+            text-align: center;
+            width: 100%;
+        }
+        
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            jusify-content: center;
+            align-items: center;
+        }
+        
+        .link {
+            min-width: 50% !important;
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+            .w3-hover-yellow:hover {
+                background-color: #f9da68 !important;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+            .w3-hover-yellow:hover {
+                background-color: #f9da68 !important;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            .link {
+                width: 100%;
+            }
+            .w3-hover-yellow:hover {
+                background-color: #f9da68 !important;
+            }
+        }
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+            .w3-hover-yellow:hover {
+                background-color: #f9da68 !important;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .w3-hover-yellow:hover {
+                background-color: #f1a137 !important;
+            }
+        }
+        
+        .w3-orange {
+            background-color: #f1a137 !important;
+        }
+    </style>
+</head>
+
+
+<body class="w3-white">
+    <!-- Content container -->
+    <div class="container">
+
+        <!-- Image and name container. Change to your picture here. -->
+        <div class="image-container">
+            <img src="https://i0.wp.com/chickensoupfamily.com/wp-content/uploads/2020/10/cropped-%E9%9B%9E%E6%B9%AF%E4%BE%86%E4%BA%86_%E9%A0%81%E9%A6%96-5.png" class="w3-margin" max-width="20%" height="100px" style="border-radius: 50%; alt=">
+            <span class="w3-tag w3-large w3-round w3-orange w3-text-white"><strong><a style='font-size: 40px; letter-spacing: 7px;'>問問秘境</a>
+     <br>
+ <a>Questions about us </a>
+  <br>
+ <a style='letter-spacing: 4px;'>聯誼版</a>
+ <br>
+ </strong>
+ </span>
+            <br>
+            <p class='fas' style='font-size:72px' id="dice"></p>
+            <div class="links-container">
+                <button onclick="document.getElementById('dice').innerHTML = getRndDice(); document.getElementById('question').innerHTML = getRndQuestion()" ontouchend="this.classList.add('w3-orange');" class="content w3-button w3-hover-yellow w3-hover-text-white w3-large w3-round w3-text-white w3-orange w3-border link"
+                    target="_blank">Roll Dice</button>
+            </div>
+            <div class="w3-text-black">
+                <p id="question" class="w3-large"><strong></strong></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getRndDice() {
+            const dices = ["&#xf523;", "&#xf524;", "&#xf525;", "&#xf526;", "&#xf527;", "&#xf528;"];
+            return dices[Math.floor(Math.random() * dices.length)];
+        }
+
+        function getRndQuestion() {
+            const questions = ["他最喜歡的電影類型是？",
+                "他習慣睡床的左側還右側？",
+                "他最喜歡的明星是誰？",
+                "他比較喜歡吃中式還是西式早餐？",
+                "他屬什麼生肖？",
+                "他的星座是？",
+                "他的職業是什麼？",
+                "他最常喝的飲料是哪一類？",
+                "他喜歡山還是海？",
+                "他最常喝的飲料是哪一類？",
+                "他喜歡長髮還是短髮？",
+                "動態和靜態活動他比較喜歡哪一種？",
+                "他覺得人生是否一定要結婚？",
+                "他覺得薯條脆的還是軟的比較好吃？",
+                "他最喜歡哪一個季節？",
+                "他覺得喝咖啡該不該加糖？",
+                "他是否相信有鬼神？",
+                "他下輩子想當男生還是女生？",
+                "他覺得最好看的顏色是？",
+                "他有幾個前任？",
+                "他現在住在哪裡？",
+                "他最喜歡的休閒活動是？",
+                "他最近吃的一餐吃什麼？",
+                "他衣服大多穿幾號？",
+                "他是否有養寵物？",
+                "他在家排行第幾？",
+                "他上大號時習慣滑手機還是看書？",
+                "他參加過什麼社團？",
+                "他覺得我身上最特別的東西是？",
+                "他對我的第一印象是？",
+                "他最欣賞我的一個特點是？",
+                "他的理想情人一定要具備的條件？",
+                "他的理想情人一定不能具備的條件？",
+                "我們的共通點是什麼？（3個）",
+                "目前為止他覺得我是個什麼樣的人？",
+                "他對在場哪個玩家第一印象最深刻？",
+                "他覺得我適合什麼顏色？",
+            ];
+            return questions[Math.floor(Math.random() * questions.length)];
+        }
+    </script>
+</body>
+
+</html>
