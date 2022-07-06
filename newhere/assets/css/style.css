@@ -46,6 +46,10 @@ body {
     color: #000000;
 }
 
+#editor p:last-of-type {
+    display: none;
+}
+
 #editor h1 {
     font-size: 26px;
 }
@@ -64,6 +68,10 @@ body {
 
 #editor p {
     line-height: 2rem !important;
+}
+
+.fr-wrapper div:first-of-type {
+    display: none;
 }
 
 .fr-placeholder {
